@@ -164,7 +164,7 @@ Starts training the network for the dataset created for one specific shuffle wit
 deeplabcut.train_network(config_path,shuffle=1,trainingsetindex=0,gputouse=None,max_snapshots_to_keep=5,autotune=False,displayiters=100,saveiters=15000, maxiters=30000)
 ```
 
-NOTE:  If the user wishes to restart the training at a specific checkpoint they can specify the full path of the checkpoint to the variable init_weights in the pose_cfg.yaml file under the train subdirectory. By editing **init_weights**, the weights can be changed to restart from a particular snapshot if training is interrupted e.g.```'<full path>-snapshot-5000'```
+*NOTE:*  If the user wishes to restart the training at a specific checkpoint they can specify the full path of the checkpoint to the variable init_weights in the pose_cfg.yaml file under the train subdirectory. By editing the **init_weights** parameter, the weights can be changed to restart from a particular snapshot if training is interrupted e.g.```'<full path>-snapshot-5000'``` Training checkpoints/snapshots are saved in the **dlc-models/train** subdirectory. 
 
 (More notes on [training a network](https://github.com/AlexEMG/DeepLabCut/blob/master/docs/functionDetails.md#g-train-the-network))
 
