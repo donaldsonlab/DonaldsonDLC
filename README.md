@@ -8,11 +8,8 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 Run in a windows 10 environment using Anaconda 4.7.5 and python 3.7.3
 
-- Spinnaker SDK
-  - _Included in Additional docs_
-
-- LabJackPython
-  - _Included in Additional docs_
+- Deep Lab Cut
+  - [Download Instructions](http://www.mousemotorlab.org/deeplabcut)
 
 - Python 3
   - [Download](https://www.python.org/downloads/)
