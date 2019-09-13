@@ -1,5 +1,5 @@
 # DonaldsonDLC
-Using DLC to acquire pose estimation information during mating bouts
+Using markerless pose estimation to quantify mating bouts. The project uses a convolutional neural network to analyze mating videos and return a csv formatted file of poses. This file is then processed using a python script and garphed to show the covariation of movement between two voles. When complete, this project will save the lab hours of time which previously would have been used to hand mark each video. 
 
 ## Getting Started
 
