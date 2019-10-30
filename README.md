@@ -2,6 +2,7 @@
 Using markerless pose estimation to quantify mating bouts. The project uses a convolutional neural network to analyze mating videos and return a csv formatted file of poses. This file is then processed using a python script and garphed to show the covariation of movement between two voles. When complete, this project will save the lab hours of time which previously would have been used to hand mark each video. 
 
 <video src="DLC_Mating_Vod.mp4" width="320" height="200" controls preload></video>
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
