@@ -6,6 +6,7 @@
 # Need    : 
 ###########################################################
 import csv
+import math
 import os
 import pandas as pd
 ###########################################################
@@ -23,7 +24,7 @@ def analyze_csv_file(threshold, csvFile):
     if ext != '.csv':
         # Not passed a .csv file
         print('Not a suitable .csv file. The file recieved was: %s' % csvFile)
-        break
+        return None
     # Prints if was given a .csv file 
     print('Pulling data from %s' % csvFile)
     
@@ -55,29 +56,35 @@ def analyze_csv_file(threshold, csvFile):
             magnitude_list.append(magnitude_vector)
 
         # Append timestamps
-        time.append(ind)
-    
+        time_list.append(ind)
+
     return magnitude_list
 
 # Takes in a list of covariation of movement values
-def windowed_preview(movementList):
-    for i, item in enumerate(movementList):
+# NOTE: Run a map to filter out values bigger than threshold 
 
+def windowed_preview(threshold, movementList):
+    for i, item in enumerate(movementList):
+        if item == None:
+            pass
+        elif item <= threshold and item >= -threshold:
+            print("%s\n" % item)
 
 ###########################################################
 # MAIN FUNCTION
 ###########################################################
 def main():
     movement_threshold = 0.5
+    covariation_threshold = 20
 
     # Holds the user inputed file paths
-    fileArgs = ['D://Donaldson Lab/Current Work/Covariation of Movement/Similar Motion/Import 9-16/similar_motionDeepCut_resnet50_Normal_MotionAug14shuffle1_110000.csv']
+    fileArgs = [r'C:\Users\Behavior Scoring\Desktop\DLC Project Utils\csv files\similar_motionDeepCut_resnet50_Normal_MotionAug14shuffle1_110000.csv']
 
     # Pass files as arguments to the function; Return data structure with analysis metrics
-    analyzed_csv_data = analyzed_csv_data(movement_threshold, fileArgs)
+    analyzed_csv_data = analyze_csv_file(movement_threshold, fileArgs[0])
 
     # Show glimpses for windows under threshold
-    
+    windowed_preview(covariation_threshold, analyzed_csv_data)
 
 if __name__ == "__main__":
     main()
