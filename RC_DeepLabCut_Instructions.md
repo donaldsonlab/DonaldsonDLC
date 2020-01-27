@@ -1,9 +1,10 @@
-# Using Deep Lab Cut on Research Computing Servers
+# Instructions for using Deep Lab Cut on CU Boulder RC's Viz Cluster
+# Accessing RC's Viz Cluster
+### DUO
+- Download the Duo app (not the Google factime app)
+- [Add your phone](https://curc.readthedocs.io/en/latest/faq.html#i-have-a-new-phone-how-do-i-move-my-duo-onto-it)
 
-# Setup working environment on RC VIZ Servers
-
-## Login to your account on our Viz cluster (Enginframe)
-
+### Login to your account on our Viz cluster (Enginframe)
 Access to EnginFrame is granted on request. Request access by sending
 email to rc-help@colorado.edu.
 
@@ -28,9 +29,9 @@ app) to log in.
 </p>
 
 
-## Create a Remote Desktop
+### Create a Remote Desktop
 
-After logging in, select "Remote Desktop" from the list of services in
+Select "Remote Desktop" from the list of services in
 the left sidebar. (Other custom services may be configured for you as
 well.)
 
@@ -66,7 +67,7 @@ OpenGL applications.
 <img src= enginframe/glxgears.png format=1000w width="100%">
 </p>
 
-## Active Session
+### Active Session
 
 Once you have an active session, you'll be on a linux desktop that looks a lot like a Mac or Windows desktop. From the main menu, open a terminal. In the terminal, you can:
 
@@ -360,8 +361,8 @@ config_path = r'C:\home\yourprojectfolder\config.yaml'
 ```
 
 
-# Credit 
-* [Chase Dudas](https://github.com/ChaseD13) - Developer 
+# Sources 
+* [Chase Dudas](https://github.com/ChaseDudas) - Developer 
 * RC - CU Boulder
 * Andrew Monaghan
 * [Mathis et al, 2018](https://www.nature.com/articles/s41593-018-0209-y)
