@@ -191,6 +191,7 @@ To analyze **multiple** videos:
 deeplabcut.analyze_videos(config_path,videos,videotype='avi',shuffle=1,trainingsetindex=0,gputouse=None,save_as_csv=False, destfolder=None)
 ```
 (Here are some tips for scaling up your analysis using [batch analysis](https://github.com/AlexEMG/DeepLabCut/wiki/Batch-Processing-your-Analysis))
+
 (ISSUE: Tenosrflow - ResourceExhaustedError -- Fixed by reducing the batch_size in config.yaml)
 
 ### 2. Filter Data
