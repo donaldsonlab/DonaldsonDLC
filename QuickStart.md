@@ -23,5 +23,6 @@
   - Huge (10TB Storage)
   - PURGED AFTER 90 DAYS!!!
   
-  ## Citation for RC-Help
-  - 
+## Citation for RC-Help
+- For general (non-Summit) use of RC resources:
+  - "This work utilized resources from the University of Colorado Boulder Research Computing Group, which is supported by the National Science Foundation (awards ACI-1532235 and ACI-1532236), the University of Colorado Boulder, and Colorado State University."
